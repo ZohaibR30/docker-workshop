@@ -98,7 +98,7 @@ df.dtypes
 
 
 from sqlalchemy import create_engine
-engine = create_engine('postgresql+psycopg://root:root@localhost:5432/ny_taxi')
+engine = create_engine('postgresql+psycopg://root:root@pgdatabase:5432/ny_taxi')
 
 
 # In[44]:
@@ -130,8 +130,8 @@ df_iter = pd.read_csv(
 # In[50]:
 
 
-for df_chunk in df_iter:
-    print(len(df_chunk))
+# for df_chunk in df_iter:
+#     print(len(df_chunk))
 
 
 # In[41]:
